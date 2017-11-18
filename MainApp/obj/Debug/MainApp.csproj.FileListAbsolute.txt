@@ -1,0 +1,9 @@
+E:\DEVELOPMENTS\Kosta\TestKostaApp\MainApp\bin\Debug\MainApp.exe.config
+E:\DEVELOPMENTS\Kosta\TestKostaApp\MainApp\bin\Debug\MainApp.exe
+E:\DEVELOPMENTS\Kosta\TestKostaApp\MainApp\bin\Debug\MainApp.pdb
+E:\DEVELOPMENTS\Kosta\TestKostaApp\MainApp\obj\Debug\MainApp.csprojResolveAssemblyReference.cache
+E:\DEVELOPMENTS\Kosta\TestKostaApp\MainApp\obj\Debug\MainApp.Properties.Resources.resources
+E:\DEVELOPMENTS\Kosta\TestKostaApp\MainApp\obj\Debug\MainApp.csproj.GenerateResource.Cache
+E:\DEVELOPMENTS\Kosta\TestKostaApp\MainApp\obj\Debug\MainApp.csproj.CoreCompileInputs.cache
+E:\DEVELOPMENTS\Kosta\TestKostaApp\MainApp\obj\Debug\MainApp.exe
+E:\DEVELOPMENTS\Kosta\TestKostaApp\MainApp\obj\Debug\MainApp.pdb
