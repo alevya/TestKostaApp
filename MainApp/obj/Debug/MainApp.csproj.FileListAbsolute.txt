@@ -7,3 +7,6 @@ E:\DEVELOPMENTS\Kosta\TestKostaApp\MainApp\obj\Debug\MainApp.csproj.GenerateReso
 E:\DEVELOPMENTS\Kosta\TestKostaApp\MainApp\obj\Debug\MainApp.csproj.CoreCompileInputs.cache
 E:\DEVELOPMENTS\Kosta\TestKostaApp\MainApp\obj\Debug\MainApp.exe
 E:\DEVELOPMENTS\Kosta\TestKostaApp\MainApp\obj\Debug\MainApp.pdb
+E:\DEVELOPMENTS\Kosta\TestKostaApp\MainApp\obj\Debug\MainApp.MainForm.resources
+E:\DEVELOPMENTS\Kosta\TestKostaApp\MainApp\obj\Debug\MainApp.View.EmployeeView.resources
+E:\DEVELOPMENTS\Kosta\TestKostaApp\MainApp\obj\Debug\MainApp.View.DepartmentView.resources

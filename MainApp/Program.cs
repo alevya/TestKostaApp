@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using MainApp.View;
 
 namespace MainApp
 {
@@ -16,7 +14,12 @@ namespace MainApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+
+            var viewLoader = new ViewLoader();
+            viewLoader.LoadEmployeeView();
+            Application.Run(viewLoader.LoadedLastView);
+            //Application.Run(new MainForm());
         }
     }
 }
