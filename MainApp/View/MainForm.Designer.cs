@@ -1,4 +1,4 @@
-﻿namespace MainApp
+﻿namespace MainApp.View
 {
     partial class MainForm
     {

@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace MainApp.View
 {
-    public partial class EmployeeView : Form
+    public partial class EmployeeView : Form, IEmployeeView
     {
         public EmployeeView()
         {

@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
+using MainApp.Common;
+using MainApp.Presenter;
 using MainApp.View;
 
 namespace MainApp
@@ -15,11 +17,16 @@ namespace MainApp
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
+            var controller = new AppController(new LightInjectAdapter());
+            controller.RegisterView<IMainView, MainForm>()
+                .RegisterView<IEmployeeView, EmployeeView>()
+                .RegisterView<IDepartmentView, DepartmentView>()
+                //.RegisterService<>()
+                .RegisterInstance(new ApplicationContext());
 
-            var viewLoader = new ViewLoader();
-            viewLoader.LoadEmployeeView();
-            Application.Run(viewLoader.LoadedLastView);
+            controller.Run<MainPresenter>();
             //Application.Run(new MainForm());
+
         }
     }
 }
