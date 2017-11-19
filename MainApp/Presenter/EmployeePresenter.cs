@@ -7,6 +7,7 @@ namespace MainApp.Presenter
     {
         public EmployeePresenter(IAppController controller, IEmployeeView view) : base(controller, view)
         {
+
         }
     }
 }
