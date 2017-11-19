@@ -1,4 +1,4 @@
-﻿namespace MainApp.View
+﻿namespace MainApp.Common
 {
     public interface IView
     {

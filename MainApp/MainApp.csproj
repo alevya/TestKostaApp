@@ -41,6 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\AppController.cs" />
+    <Compile Include="Common\BasePresenter.cs" />
+    <Compile Include="Common\IAppController.cs" />
+    <Compile Include="Common\IContainer.cs" />
+    <Compile Include="Common\IPresenter.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,7 +74,7 @@
     <Compile Include="View\EmployeeView.Designer.cs">
       <DependentUpon>EmployeeView.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\IView.cs" />
+    <Compile Include="Common\IView.cs" />
     <Compile Include="View\IViewLoader.cs" />
     <Compile Include="View\ViewLoader.cs" />
     <EmbeddedResource Include="MainForm.resx">
