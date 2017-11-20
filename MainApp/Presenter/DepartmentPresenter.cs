@@ -1,5 +1,6 @@
 ﻿using System.Windows.Forms;
 using MainApp.Common;
+using MainApp.Model;
 using MainApp.View;
 
 namespace MainApp.Presenter
@@ -13,8 +14,10 @@ namespace MainApp.Presenter
 
     internal class DepartmentPresenter : BasePresenter<IDepartmentView, TabPage>
     {
-        public DepartmentPresenter(IAppController controller, IDepartmentView view) : base(controller, view)
+        private IDbService _dbService;
+        public DepartmentPresenter(IAppController controller, IDepartmentView view, IDbService dbService) : base(controller, view)
         {
+            _dbService = dbService;
         }
 
         public override void Run(TabPage argument)

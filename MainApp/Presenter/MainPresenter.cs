@@ -1,5 +1,6 @@
 ﻿using System.Windows.Forms;
 using MainApp.Common;
+using MainApp.Model;
 using MainApp.View;
 
 namespace MainApp.Presenter

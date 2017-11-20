@@ -50,6 +50,7 @@
     <Compile Include="Common\IContainer.cs" />
     <Compile Include="Common\IPresenter.cs" />
     <Compile Include="LightInjectAdapter.cs" />
+    <Compile Include="Model\IDbService.cs" />
     <Compile Include="View\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,7 +59,7 @@
     </Compile>
     <Compile Include="Model\Department.cs" />
     <Compile Include="Model\Employee.cs" />
-    <Compile Include="Model\EmployeeServices.cs" />
+    <Compile Include="Model\DbService.cs" />
     <Compile Include="Presenter\DepartmentPresenter.cs" />
     <Compile Include="Presenter\EmployeePresenter.cs" />
     <Compile Include="Presenter\MainPresenter.cs" />

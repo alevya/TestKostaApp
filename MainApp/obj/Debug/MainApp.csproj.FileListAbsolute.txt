@@ -22,3 +22,4 @@ D:\DEVELOPMENTS\TestKostaApp\MainApp\obj\Debug\MainApp.csproj.GenerateResource.C
 D:\DEVELOPMENTS\TestKostaApp\MainApp\obj\Debug\MainApp.csproj.CoreCompileInputs.cache
 D:\DEVELOPMENTS\TestKostaApp\MainApp\obj\Debug\MainApp.exe
 D:\DEVELOPMENTS\TestKostaApp\MainApp\obj\Debug\MainApp.pdb
+D:\DEVELOPMENTS\TestKostaApp\MainApp\obj\Debug\MainApp.csprojResolveAssemblyReference.cache

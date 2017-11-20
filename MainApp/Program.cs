@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using MainApp.Common;
+using MainApp.Model;
 using MainApp.Presenter;
 using MainApp.View;
 
@@ -21,11 +22,10 @@ namespace MainApp
             controller.RegisterView<IMainView, MainForm>()
                 .RegisterView<IEmployeeView, EmployeeView>()
                 .RegisterView<IDepartmentView, DepartmentView>()
-                //.RegisterService<>()
+                .RegisterService<IDbService, DbService>()
                 .RegisterInstance(new ApplicationContext());
 
             controller.Run<MainPresenter>();
-            //Application.Run(new MainForm());
 
         }
     }

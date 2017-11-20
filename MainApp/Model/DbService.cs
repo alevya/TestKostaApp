@@ -2,19 +2,20 @@
 
 namespace MainApp.Model
 {
-    internal class EmployeeServices
+    internal class DbService : IDbService
     {
         private readonly TestDBDataSet _dbDataSet;
 
-        public EmployeeServices(TestDBDataSet dbDataSet)
+        public DbService()
         {
-            _dbDataSet = dbDataSet;
+            _dbDataSet = new TestDBDataSet();
         }
 
         public void LoadEmployee()
         {
             EmpoyeeTableAdapter taEmployee = new EmpoyeeTableAdapter();
             taEmployee.Fill(_dbDataSet.Empoyee);
+            var t = taEmployee.GetData();
         }
 
         public void SaveEmployee()
