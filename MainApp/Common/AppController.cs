@@ -49,12 +49,5 @@
             presenter.Run(argumnent);
         }
 
-        public IView GetView<TView>(string serviceName) where TView : class, IView
-        {
-            if (!_container.IsRegistered<TView>())
-                return null;
-            return _container.Resolve<IView>(serviceName);
-        }
-
     }
 }

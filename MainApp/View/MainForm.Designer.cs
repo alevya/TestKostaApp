@@ -37,7 +37,7 @@
             // p_bottom
             // 
             this.p_bottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.p_bottom.Location = new System.Drawing.Point(0, 453);
+            this.p_bottom.Location = new System.Drawing.Point(0, 584);
             this.p_bottom.Name = "p_bottom";
             this.p_bottom.Size = new System.Drawing.Size(948, 46);
             this.p_bottom.TabIndex = 2;
@@ -48,7 +48,7 @@
             this.p_top.Dock = System.Windows.Forms.DockStyle.Fill;
             this.p_top.Location = new System.Drawing.Point(0, 0);
             this.p_top.Name = "p_top";
-            this.p_top.Size = new System.Drawing.Size(948, 453);
+            this.p_top.Size = new System.Drawing.Size(948, 584);
             this.p_top.TabIndex = 3;
             // 
             // tc_organization
@@ -57,14 +57,14 @@
             this.tc_organization.Location = new System.Drawing.Point(0, 0);
             this.tc_organization.Name = "tc_organization";
             this.tc_organization.SelectedIndex = 0;
-            this.tc_organization.Size = new System.Drawing.Size(948, 453);
+            this.tc_organization.Size = new System.Drawing.Size(948, 584);
             this.tc_organization.TabIndex = 0;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(948, 499);
+            this.ClientSize = new System.Drawing.Size(948, 630);
             this.Controls.Add(this.p_top);
             this.Controls.Add(this.p_bottom);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;

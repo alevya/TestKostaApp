@@ -31,7 +31,10 @@
             this.testDBDataSet = new MainApp.TestDBDataSet();
             this.p_right = new System.Windows.Forms.Panel();
             this.p_left = new System.Windows.Forms.Panel();
+            this.dgvEmployee = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.testDBDataSet)).BeginInit();
+            this.p_left.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEmployee)).BeginInit();
             this.SuspendLayout();
             // 
             // testDBDataSet
@@ -43,20 +46,30 @@
             // 
             this.p_right.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.p_right.Dock = System.Windows.Forms.DockStyle.Right;
-            this.p_right.Location = new System.Drawing.Point(665, 0);
+            this.p_right.Location = new System.Drawing.Point(646, 0);
             this.p_right.Name = "p_right";
-            this.p_right.Size = new System.Drawing.Size(188, 551);
+            this.p_right.Size = new System.Drawing.Size(207, 551);
             this.p_right.TabIndex = 0;
             // 
             // p_left
             // 
             this.p_left.AutoSize = true;
             this.p_left.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.p_left.Controls.Add(this.dgvEmployee);
             this.p_left.Dock = System.Windows.Forms.DockStyle.Fill;
             this.p_left.Location = new System.Drawing.Point(0, 0);
             this.p_left.Name = "p_left";
-            this.p_left.Size = new System.Drawing.Size(665, 551);
+            this.p_left.Size = new System.Drawing.Size(646, 551);
             this.p_left.TabIndex = 1;
+            // 
+            // dgvEmployee
+            // 
+            this.dgvEmployee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvEmployee.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvEmployee.Location = new System.Drawing.Point(0, 0);
+            this.dgvEmployee.Name = "dgvEmployee";
+            this.dgvEmployee.Size = new System.Drawing.Size(644, 549);
+            this.dgvEmployee.TabIndex = 0;
             // 
             // EmployeeView
             // 
@@ -68,6 +81,8 @@
             this.Name = "EmployeeView";
             this.Size = new System.Drawing.Size(853, 551);
             ((System.ComponentModel.ISupportInitialize)(this.testDBDataSet)).EndInit();
+            this.p_left.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEmployee)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -77,5 +92,6 @@
         private TestDBDataSet testDBDataSet;
         private System.Windows.Forms.Panel p_right;
         private System.Windows.Forms.Panel p_left;
+        private System.Windows.Forms.DataGridView dgvEmployee;
     }
 }

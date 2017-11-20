@@ -17,6 +17,5 @@
         void Run<TPresenter, TArgumnent>(TArgumnent argumnent)
             where TPresenter : class, IPresenter<TArgumnent>;
 
-        IView GetView<TView>(string implementation) where TView : class, IView;
     }
 }
