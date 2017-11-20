@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MainApp.Common
+﻿namespace MainApp.Common
 {
     internal interface IAppController
     {
@@ -22,5 +16,7 @@ namespace MainApp.Common
 
         void Run<TPresenter, TArgumnent>(TArgumnent argumnent)
             where TPresenter : class, IPresenter<TArgumnent>;
+
+        IView GetView<TView>(string implementation) where TView : class, IView;
     }
 }

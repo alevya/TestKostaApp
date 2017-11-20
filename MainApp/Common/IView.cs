@@ -1,8 +1,11 @@
-﻿namespace MainApp.Common
+﻿using System.Windows.Forms;
+
+namespace MainApp.Common
 {
     public interface IView
     {
         void Show();
-        void Close();
+        DockStyle Dock { get; set; }
+        //void Close();
     }
 }

@@ -10,3 +10,15 @@ E:\DEVELOPMENTS\Kosta\TestKostaApp\MainApp\obj\Debug\MainApp.View.EmployeeView.r
 E:\DEVELOPMENTS\Kosta\TestKostaApp\MainApp\obj\Debug\MainApp.View.DepartmentView.resources
 E:\DEVELOPMENTS\Kosta\TestKostaApp\MainApp\obj\Debug\MainApp.View.MainForm.resources
 E:\DEVELOPMENTS\Kosta\TestKostaApp\MainApp\bin\Debug\LightInject.dll
+D:\DEVELOPMENTS\TestKostaApp\MainApp\bin\Debug\MainApp.exe.config
+D:\DEVELOPMENTS\TestKostaApp\MainApp\bin\Debug\MainApp.exe
+D:\DEVELOPMENTS\TestKostaApp\MainApp\bin\Debug\MainApp.pdb
+D:\DEVELOPMENTS\TestKostaApp\MainApp\bin\Debug\LightInject.dll
+D:\DEVELOPMENTS\TestKostaApp\MainApp\obj\Debug\MainApp.View.MainForm.resources
+D:\DEVELOPMENTS\TestKostaApp\MainApp\obj\Debug\MainApp.Properties.Resources.resources
+D:\DEVELOPMENTS\TestKostaApp\MainApp\obj\Debug\MainApp.View.DepartmentView.resources
+D:\DEVELOPMENTS\TestKostaApp\MainApp\obj\Debug\MainApp.View.EmployeeView.resources
+D:\DEVELOPMENTS\TestKostaApp\MainApp\obj\Debug\MainApp.csproj.GenerateResource.Cache
+D:\DEVELOPMENTS\TestKostaApp\MainApp\obj\Debug\MainApp.csproj.CoreCompileInputs.cache
+D:\DEVELOPMENTS\TestKostaApp\MainApp\obj\Debug\MainApp.exe
+D:\DEVELOPMENTS\TestKostaApp\MainApp\obj\Debug\MainApp.pdb

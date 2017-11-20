@@ -35,6 +35,11 @@ namespace MainApp
             return _container.GetInstance<TService>();
         }
 
+        public TService Resolve<TService>(string serviceName)
+        {
+            return _container.GetInstance<TService>(serviceName);
+        }
+
         public bool IsRegistered<TService>()
         {
             return _container.CanGetInstance(typeof(TService), string.Empty);

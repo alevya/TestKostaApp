@@ -9,6 +9,7 @@ namespace MainApp.Common
         void Register<TService>();
         void RegisterInstance<T>(T instance);
         TService Resolve<TService>();
+        TService Resolve<TService>(string serviceName);
         bool IsRegistered<TService>();
         void Register<TService, TArgument>(Expression<Func<TArgument, TService>> factory);
 

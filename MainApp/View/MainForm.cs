@@ -12,9 +12,17 @@ namespace MainApp.View
             _appContext = appContext;
             InitializeComponent();
             tc_organization.Selected += (sender, args) => _invoke(SelectPage);
+
+            //TabPage tpEmployees = new TabPage("Сотрудники");
+            
+            //TabPage tpDepartments = new TabPage("Отделы");
+           
+            //tc_organization.TabPages.Add(tpEmployees);
+            //tc_organization.TabPages.Add(tpDepartments);
+
         }
 
-#region IMainView Implements
+    #region IMainView Implements
         public new void Show()
         {
             _appContext.MainForm = this;
@@ -32,7 +40,12 @@ namespace MainApp.View
             get => tc_organization.SelectedTab;
         }
 
-#endregion
+        public TabControl MainTab
+        {
+            get => tc_organization;
+        }
+
+    #endregion
 
         private void _invoke(Action action)
         {

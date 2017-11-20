@@ -1,4 +1,6 @@
-﻿namespace MainApp.Common
+﻿using System.Windows.Forms;
+
+namespace MainApp.Common
 {
     internal abstract class BasePresenter<TView> :IPresenter where TView :IView
     {
@@ -18,7 +20,7 @@
 
     }
 
-    internal abstract class BasePresenter<TView, TArg> : IPresenter<TArg> where TView : IView
+    internal abstract class BasePresenter<TView, TArg> : IPresenter<TArg> where TView : class, IView
     {
         protected TView View { get; }
         protected IAppController Controller { get; }
@@ -27,6 +29,7 @@
         {
             Controller = controller;
             View = view;
+            View.Dock = DockStyle.Fill;
         }
 
         public abstract void Run(TArg argument);

@@ -9,5 +9,6 @@ namespace MainApp.View
         event Action SelectPage;
         Control SelectedPage { get; }
         void ShowError(string msgError);
+        TabControl MainTab { get; }
     }
 }

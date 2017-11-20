@@ -31,10 +31,7 @@
             this.p_bottom = new System.Windows.Forms.Panel();
             this.p_top = new System.Windows.Forms.Panel();
             this.tc_organization = new System.Windows.Forms.TabControl();
-            this.tp_employee = new System.Windows.Forms.TabPage();
-            this.tp_department = new System.Windows.Forms.TabPage();
             this.p_top.SuspendLayout();
-            this.tc_organization.SuspendLayout();
             this.SuspendLayout();
             // 
             // p_bottom
@@ -56,34 +53,12 @@
             // 
             // tc_organization
             // 
-            this.tc_organization.Controls.Add(this.tp_employee);
-            this.tc_organization.Controls.Add(this.tp_department);
             this.tc_organization.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tc_organization.Location = new System.Drawing.Point(0, 0);
             this.tc_organization.Name = "tc_organization";
             this.tc_organization.SelectedIndex = 0;
             this.tc_organization.Size = new System.Drawing.Size(948, 453);
             this.tc_organization.TabIndex = 0;
-            // 
-            // tp_employee
-            // 
-            this.tp_employee.Location = new System.Drawing.Point(4, 22);
-            this.tp_employee.Name = "tp_employee";
-            this.tp_employee.Padding = new System.Windows.Forms.Padding(3);
-            this.tp_employee.Size = new System.Drawing.Size(940, 427);
-            this.tp_employee.TabIndex = 0;
-            this.tp_employee.Text = "Сотрудники";
-            this.tp_employee.UseVisualStyleBackColor = true;
-            // 
-            // tp_department
-            // 
-            this.tp_department.Location = new System.Drawing.Point(4, 22);
-            this.tp_department.Name = "tp_department";
-            this.tp_department.Padding = new System.Windows.Forms.Padding(3);
-            this.tp_department.Size = new System.Drawing.Size(847, 349);
-            this.tp_department.TabIndex = 1;
-            this.tp_department.Text = "Отделы";
-            this.tp_department.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
@@ -98,7 +73,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Тестовое приложение";
             this.p_top.ResumeLayout(false);
-            this.tc_organization.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -108,8 +82,6 @@
         private System.Windows.Forms.Panel p_bottom;
         private System.Windows.Forms.Panel p_top;
         private System.Windows.Forms.TabControl tc_organization;
-        private System.Windows.Forms.TabPage tp_employee;
-        private System.Windows.Forms.TabPage tp_department;
     }
 }
 

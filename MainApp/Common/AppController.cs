@@ -40,7 +40,7 @@
             presenter.Run();
         }
 
-        public void Run<TPresenter, TArgumnent>(TArgumnent argumnent) where TPresenter : class, IPresenter<TArgumnent>
+        public void Run<TPresenter, TArgument>(TArgument argumnent) where TPresenter : class, IPresenter<TArgument>
         {
             if (!_container.IsRegistered<TPresenter>())
                 _container.Register<TPresenter>();
@@ -48,5 +48,13 @@
             var presenter = _container.Resolve<TPresenter>();
             presenter.Run(argumnent);
         }
+
+        public IView GetView<TView>(string serviceName) where TView : class, IView
+        {
+            if (!_container.IsRegistered<TView>())
+                return null;
+            return _container.Resolve<IView>(serviceName);
+        }
+
     }
 }
