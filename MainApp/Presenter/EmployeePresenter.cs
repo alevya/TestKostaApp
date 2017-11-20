@@ -21,7 +21,8 @@ namespace MainApp.Presenter
         public EmployeePresenter(IAppController controller, IEmployeeView view, IDbService dbService) : base(controller, view)
         {
             _dbService = dbService;
-            _dbService.LoadEmployee();
+             AllEmployees =_dbService.LoadEmployee();
+            View.Binding.DataSource = AllEmployees;
         }
 
         public override void Run(TabPage argument)
@@ -29,7 +30,7 @@ namespace MainApp.Presenter
             argument.Controls.Add((Control)View);
         }
 
-        public ICollection AllEmployees
+        public IEnumerable AllEmployees
         { get; private set; }
     }
 }

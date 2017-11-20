@@ -1,4 +1,6 @@
-﻿using MainApp.TestDBDataSetTableAdapters;
+﻿using System.Collections;
+using System.Collections.Generic;
+using MainApp.TestDBDataSetTableAdapters;
 
 namespace MainApp.Model
 {
@@ -11,11 +13,11 @@ namespace MainApp.Model
             _dbDataSet = new TestDBDataSet();
         }
 
-        public void LoadEmployee()
+        public IEnumerable LoadEmployee()
         {
             EmpoyeeTableAdapter taEmployee = new EmpoyeeTableAdapter();
             taEmployee.Fill(_dbDataSet.Empoyee);
-            var t = taEmployee.GetData();
+            return taEmployee.GetData();
         }
 
         public void SaveEmployee()

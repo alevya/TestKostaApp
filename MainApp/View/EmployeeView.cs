@@ -13,7 +13,10 @@ namespace MainApp.View
         public EmployeeView()
         {
             InitializeComponent();
+            Binding = new BindingSource();
+            dgvEmployee.DataSource = Binding;
         }
 
+        public BindingSource Binding { get; }
     }
 }
