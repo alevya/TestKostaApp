@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Data.Entity;
+﻿using System.Data.Entity;
 
 namespace MainApp.Model
 {

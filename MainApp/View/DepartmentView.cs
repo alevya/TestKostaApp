@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Windows.Forms;
+using MainApp.Model;
 
 namespace MainApp.View
 {
@@ -23,20 +24,21 @@ namespace MainApp.View
             _populateTreeView(Binding.List);
         }
 
-        private void _populateTreeView(IEnumerable rowViews)
+        private void _populateTreeView(IEnumerable list)
         {
-            var list = rowViews.Cast<DataRowView>().ToList();
-            var rootNodes = list.Where(delegate(DataRowView view)
-                                        {
-                                            Guid.TryParse(view["ParentDepartmentID"].ToString(), out Guid parentID);
-                                            return parentID == Guid.Empty;
-                                        });
-            foreach (var rootNode in rootNodes)
-            {
-                var node = _getTreeNode(rootNode, list);
-                node.Expand();
-                tvDepartment.Nodes.Add(node);
-            }
+
+            //var list = rowViews.Cast<DataRowView>().ToList();
+            //var rootNodes = list.Where(delegate(DataRowView view)
+            //                            {
+            //                                Guid.TryParse(view["ParentDepartmentID"].ToString(), out Guid parentID);
+            //                                return parentID == Guid.Empty;
+            //                            });
+            //foreach (var rootNode in rootNodes)
+            //{
+            //    var node = _getTreeNode(rootNode, list);
+            //    node.Expand();
+            //    tvDepartment.Nodes.Add(node);
+            //}
         }
 
         private TreeNode _getTreeNode(DataRowView row, IEnumerable<DataRowView> list)

@@ -14,8 +14,18 @@ namespace MainApp.View
         {
             InitializeComponent();
             Binding = new BindingSource();
+
+            dgvEmployee.AutoGenerateColumns = false;
+            dgvEmployee.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            dgvEmployee.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvEmployee.Columns.AddRange(new[]
+            {
+                new DataGridViewTextBoxColumn{HeaderText = "Имя", DataPropertyName = "FirstName"},
+                new DataGridViewTextBoxColumn{HeaderText = "Фамилия", DataPropertyName = "SurName"},
+                new DataGridViewTextBoxColumn{HeaderText = "Отчество", DataPropertyName = "Patronymic"},
+                new DataGridViewTextBoxColumn{HeaderText = "Должность", DataPropertyName = "Position"},
+            });
             dgvEmployee.DataSource = Binding;
-            
         }
 
         public BindingSource Binding { get; }

@@ -39,9 +39,9 @@
             // 
             this.p_right.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.p_right.Dock = System.Windows.Forms.DockStyle.Right;
-            this.p_right.Location = new System.Drawing.Point(646, 0);
+            this.p_right.Location = new System.Drawing.Point(480, 0);
             this.p_right.Name = "p_right";
-            this.p_right.Size = new System.Drawing.Size(207, 551);
+            this.p_right.Size = new System.Drawing.Size(373, 551);
             this.p_right.TabIndex = 0;
             // 
             // p_left
@@ -52,7 +52,7 @@
             this.p_left.Dock = System.Windows.Forms.DockStyle.Fill;
             this.p_left.Location = new System.Drawing.Point(0, 0);
             this.p_left.Name = "p_left";
-            this.p_left.Size = new System.Drawing.Size(646, 551);
+            this.p_left.Size = new System.Drawing.Size(480, 551);
             this.p_left.TabIndex = 1;
             // 
             // dgvEmployee
@@ -61,7 +61,7 @@
             this.dgvEmployee.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvEmployee.Location = new System.Drawing.Point(0, 0);
             this.dgvEmployee.Name = "dgvEmployee";
-            this.dgvEmployee.Size = new System.Drawing.Size(644, 549);
+            this.dgvEmployee.Size = new System.Drawing.Size(478, 549);
             this.dgvEmployee.TabIndex = 0;
             // 
             // EmployeeView

@@ -21,7 +21,11 @@ namespace MainApp
 
         public IEnumerable<Department> LoadDepartment()
         {
-            return null;
+            using (var dbContext = new TestDbContext())
+            {
+                var sql = "SELECT * FROM Department";
+                return dbContext.Database.SqlQuery<Department>(sql).ToList();
+            }
         }
     }
 }
