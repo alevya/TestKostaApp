@@ -6,6 +6,7 @@ namespace MainApp.Common
     {
         void Show();
         DockStyle Dock { get; set; }
+        BindingSource Binding { get; } 
         //void Close();
     }
 }

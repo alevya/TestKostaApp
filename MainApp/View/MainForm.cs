@@ -29,6 +29,8 @@ namespace MainApp.View
             Application.Run(_appContext);
         }
 
+        public BindingSource Binding { get; }
+
         public event Action SelectPage;
         public void ShowError(string msgError)
         {

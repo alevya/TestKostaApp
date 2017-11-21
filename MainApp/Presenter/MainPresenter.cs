@@ -9,14 +9,15 @@ namespace MainApp.Presenter
     {
         public MainPresenter(IAppController controller, IMainView view) : base(controller, view)
         {
-            TabPage tpEmployees = new TabPage("Сотрудники");
-            controller.Run<EmployeePresenter, TabPage>(tpEmployees);
-
             TabPage tpDepartments = new TabPage("Отделы");
             controller.Run<DepartmentPresenter, TabPage>(tpDepartments);
 
-            view.MainTab.TabPages.Add(tpEmployees);
+            TabPage tpEmployees = new TabPage("Сотрудники");
+            controller.Run<EmployeePresenter, TabPage>(tpEmployees);
+
             view.MainTab.TabPages.Add(tpDepartments);
+            view.MainTab.TabPages.Add(tpEmployees);
+            
         }
     }
 }

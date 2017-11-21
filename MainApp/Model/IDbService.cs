@@ -10,6 +10,7 @@ namespace MainApp.Model
     internal interface IDbService
     {
         IEnumerable LoadEmployee();
+        IEnumerable LoadDepartment();
 
     }
 }

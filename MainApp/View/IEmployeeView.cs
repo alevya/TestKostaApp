@@ -5,6 +5,6 @@ namespace MainApp.View
 {
     internal interface IEmployeeView :IView
     {
-        BindingSource Binding { get; }
+       
     }
 }

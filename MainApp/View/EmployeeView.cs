@@ -15,6 +15,7 @@ namespace MainApp.View
             InitializeComponent();
             Binding = new BindingSource();
             dgvEmployee.DataSource = Binding;
+            
         }
 
         public BindingSource Binding { get; }

@@ -18,6 +18,7 @@ namespace MainApp.Presenter
         public DepartmentPresenter(IAppController controller, IDepartmentView view, IDbService dbService) : base(controller, view)
         {
             _dbService = dbService;
+            View.Binding.DataSource = _dbService.LoadDepartment();
         }
 
         public override void Run(TabPage argument)

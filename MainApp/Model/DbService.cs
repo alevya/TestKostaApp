@@ -15,9 +15,16 @@ namespace MainApp.Model
 
         public IEnumerable LoadEmployee()
         {
-            EmpoyeeTableAdapter taEmployee = new EmpoyeeTableAdapter();
+            var taEmployee = new EmpoyeeTableAdapter();
             taEmployee.Fill(_dbDataSet.Empoyee);
             return taEmployee.GetData();
+        }
+
+        public IEnumerable LoadDepartment()
+        {
+            var taDepartment= new DepartmentTableAdapter();
+            taDepartment.Fill(_dbDataSet.Department);
+            return taDepartment.GetData();
         }
 
         public void SaveEmployee()
