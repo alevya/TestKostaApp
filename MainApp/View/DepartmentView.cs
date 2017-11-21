@@ -33,7 +33,8 @@ namespace MainApp.View
                                         });
             foreach (var rootNode in rootNodes)
             {
-               var node = _getTreeNode(rootNode, list);
+                var node = _getTreeNode(rootNode, list);
+                node.Expand();
                 tvDepartment.Nodes.Add(node);
             }
         }
