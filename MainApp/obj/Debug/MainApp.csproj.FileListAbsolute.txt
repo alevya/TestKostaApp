@@ -23,3 +23,7 @@ D:\DEVELOPMENTS\TestKostaApp\MainApp\obj\Debug\MainApp.csproj.CoreCompileInputs.
 D:\DEVELOPMENTS\TestKostaApp\MainApp\obj\Debug\MainApp.exe
 D:\DEVELOPMENTS\TestKostaApp\MainApp\obj\Debug\MainApp.pdb
 D:\DEVELOPMENTS\TestKostaApp\MainApp\obj\Debug\MainApp.csprojResolveAssemblyReference.cache
+D:\DEVELOPMENTS\TestKostaApp\MainApp\bin\Debug\EntityFramework.dll
+D:\DEVELOPMENTS\TestKostaApp\MainApp\bin\Debug\EntityFramework.SqlServer.dll
+D:\DEVELOPMENTS\TestKostaApp\MainApp\bin\Debug\EntityFramework.xml
+D:\DEVELOPMENTS\TestKostaApp\MainApp\bin\Debug\EntityFramework.SqlServer.xml

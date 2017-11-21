@@ -32,10 +32,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="LightInject, Version=5.1.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\LightInject.5.1.1\lib\net46\LightInject.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
@@ -50,8 +57,10 @@
     <Compile Include="Common\IAppController.cs" />
     <Compile Include="Common\IContainer.cs" />
     <Compile Include="Common\IPresenter.cs" />
+    <Compile Include="EntityDbService.cs" />
     <Compile Include="LightInjectAdapter.cs" />
     <Compile Include="Model\IDbService.cs" />
+    <Compile Include="Model\TestDBContext.cs" />
     <Compile Include="View\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,17 +69,11 @@
     </Compile>
     <Compile Include="Model\Department.cs" />
     <Compile Include="Model\Employee.cs" />
-    <Compile Include="Model\DbService.cs" />
     <Compile Include="Presenter\DepartmentPresenter.cs" />
     <Compile Include="Presenter\EmployeePresenter.cs" />
     <Compile Include="Presenter\MainPresenter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TestDBDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TestDBDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="View\DepartmentView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,17 +118,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="TestDBDataSet.xsc">
-      <DependentUpon>TestDBDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="TestDBDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>TestDBDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="TestDBDataSet.xss">
-      <DependentUpon>TestDBDataSet.xsd</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

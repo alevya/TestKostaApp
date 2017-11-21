@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace MainApp.Model
 {
-    internal class Employee
+    public class Employee
     {
         private Department _department;
 
-        public int ID { get; set; }
+        public decimal ID { get; set; }
         public Guid DepartmentID { get; set; }
 
         public string SurName { get; set; }

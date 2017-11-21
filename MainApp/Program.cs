@@ -22,7 +22,8 @@ namespace MainApp
             controller.RegisterView<IMainView, MainForm>()
                 .RegisterView<IEmployeeView, EmployeeView>()
                 .RegisterView<IDepartmentView, DepartmentView>()
-                .RegisterService<IDbService, DbService>()
+                //.RegisterService<IDbService, DbService>()
+                .RegisterService<IDbService, EntityDbService>()
                 .RegisterInstance(new ApplicationContext());
 
             controller.Run<MainPresenter>();

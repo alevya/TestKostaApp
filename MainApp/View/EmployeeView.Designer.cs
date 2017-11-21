@@ -28,19 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.testDBDataSet = new MainApp.TestDBDataSet();
             this.p_right = new System.Windows.Forms.Panel();
             this.p_left = new System.Windows.Forms.Panel();
             this.dgvEmployee = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.testDBDataSet)).BeginInit();
             this.p_left.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployee)).BeginInit();
             this.SuspendLayout();
-            // 
-            // testDBDataSet
-            // 
-            this.testDBDataSet.DataSetName = "TestDBDataSet";
-            this.testDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // p_right
             // 
@@ -80,7 +73,6 @@
             this.Controls.Add(this.p_right);
             this.Name = "EmployeeView";
             this.Size = new System.Drawing.Size(853, 551);
-            ((System.ComponentModel.ISupportInitialize)(this.testDBDataSet)).EndInit();
             this.p_left.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployee)).EndInit();
             this.ResumeLayout(false);
@@ -89,7 +81,6 @@
         }
 
         #endregion
-        private TestDBDataSet testDBDataSet;
         private System.Windows.Forms.Panel p_right;
         private System.Windows.Forms.Panel p_left;
         private System.Windows.Forms.DataGridView dgvEmployee;

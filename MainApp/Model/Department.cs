@@ -4,7 +4,7 @@ using System.Collections.ObjectModel;
 
 namespace MainApp.Model
 {
-    internal class Department
+    public class Department
     {
         public Department()
         {
