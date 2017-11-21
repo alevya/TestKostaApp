@@ -57,10 +57,13 @@ namespace MainApp.View
                 var chNode = _getTreeNode(item, list);
                 chNode.Text = Convert.ToString(item["Name"]);
                 node.Nodes.Add(chNode);
+                
             }
 
             return node;
         }
+
+
 
         public BindingSource Binding { get; }
     }
